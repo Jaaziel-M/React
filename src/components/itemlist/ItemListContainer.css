@@ -1,0 +1,26 @@
+.all{
+    display: grid;
+    grid-template-areas:"titles titles list";
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 800px;
+    background-color: #1d2f42;
+}
+
+.titles{
+    grid-area: titles;
+    margin: 30px;
+    color: aliceblue;
+}
+
+.list{
+    grid-area: list;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.h1{
+    color:darkblue;
+}
+.h2{
+    color:darkblue;
+}
