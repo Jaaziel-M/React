@@ -1,0 +1,33 @@
+let inventory = [
+    {product: "Marcadoras primarias", quantity: 30, price: 1000, pirctureUrl: "",  description: "DMR M4", brand: "KRYTAC"},
+    {product: "Marcadoras primarias", quantity: 30, price: 960, pirctureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/863/270/products/marcadora-airsoft-krytac-tridet-mk2-crb-m-combat-grey-121-84ed1c2102f25481e216536662489777-480-0.jpg",  description: "DMR M16", brand: "GYG"},
+    {product: "Marcadoras primarias", quantity: 30, price: 500, pirctureUrl: "",  description: "ASALTO AK47", brand: "CYMA"},
+    {product: "Marcadoras primarias", quantity: 30, price: 700, pirctureUrl: "",  description: "ASALTO ARK", brand: "ICS"},
+    {product: "Marcadoras primarias", quantity: 30, price: 550, pirctureUrl: "",  description: "ASALTO M4", brand: "KRYTAC"},
+    {product: "Marcadoras primarias", quantity: 30, price: 2000, pirctureUrl: "",  description: "SOPORTE GATLING GUN", brand: "AYK"},
+    {product: "Marcadoras primarias", quantity: 30, price: 1500, pirctureUrl: "",  description: "SOPORTE M249", brand: "CYBERGUN"},
+    {product: "Marcadoras secundarias", quantity: 30, price: 300, pirctureUrl: "",  description: "DESERT EAGLE", brand: "CYBERGUN"},
+    {product: "Marcadoras secundarias", quantity: 30, price: 250, pirctureUrl: "",  description: "GLOCK 19", brand: "WE"},
+    {product: "Marcadoras secundarias", quantity: 30, price: 200, pirctureUrl: "",  description: "1911", brand: "CYBERGUN"},
+    {product: "Marcadoras secundarias", quantity: 30, price: 100, pirctureUrl: "",  description: "BERETTA", brand: "GYG"},
+    {product: "indumentaria", quantity: 30, price: 60,  pirctureUrl:"", description: "PANTALON MULTICAM", brand: "ALCATRAZ"},
+    {product: "indumentaria", quantity: 30, price: 55,  pirctureUrl:"", description: "BAJO CHALECO MULTICAM",brand: "ALCATRAZ"},
+    {product: "indumentaria", quantity: 30, price: 100, pirctureUrl:"",  description: "CHALECO MOLLE",brand: "ALCATRAZ"},
+    {product: "indumentaria", quantity: 30, price: 150, pirctureUrl:"",  description: "GUILLIE",brand: "EMMERSON GEAR"},
+    {product: "indumentaria", quantity: 30, price: 70,  pirctureUrl:"", description: "BORCEGOS CAÑA ALTA", brand: "EMMERSON GEAR"},
+    {product: "Protección", quantity: 30, price: 20, pirctureUrl:"", description: "MESH FACIAL", brand: "RBN TACTICAL"},
+    {product: "Protección", quantity: 30, price: 35, pirctureUrl:"", description: "LENTES CERTIFICADOS", brand: "WILLEX"},
+    {product: "Accesorios para marcadoras", quantity: 30, price: 300, pirctureUrl: "", description: "MIRA TELESCOPICA", brand: "SHILBA"},
+    {product: "Internos para marcadoras", quantity: 30, price: 9, pirctureUrl: "", description: "PISTON HEAD", brand: "SHS"},
+    {product: "Internos para marcadoras", quantity: 30, price: 8, pirctureUrl: "", description: "CYLINDER", brand: "SHS"},
+    {product: "Internos para marcadoras", quantity: 30, price: 15, pirctureUrl: "", description: "INNER BARREL", brand: "KRYTAC"},
+    {product: "Internos para marcadoras", quantity: 30, price: 3, pirctureUrl: "", description: "GOMA CON BUCKING", brand: "MAPLE LEAF"},
+    {product: "Accesorios para marcadoras", quantity: 30, price: 255, pirctureUrl: "", description: "MIRA HOLOGRAFICA", brand: "SHILBA"},
+    {product: "Accesorios para marcadoras", quantity: 30, price: 100, pirctureUrl: "", description: "LINTERNA CON SOPORTE", brand: "SHILBA"},
+    {product: "Accesorios para marcadoras", quantity: 30, price: 150, pirctureUrl: "", description: "LASER VERDE CON SOPORTE", brand: "ACETECH"},
+    {product: "Accesorios para marcadoras", quantity: 30, price: 70, pirctureUrl: "", description: "BIPODE", brand: "EMERSONGEAR"},
+    {product: "Internos para marcadoras", quantity: 30, price: 50, pirctureUrl: "", description: "TRACER", brand: "ACETECH"},
+    {product: "Internos para marcadoras", quantity: 30, price: 60, pirctureUrl: "", description: "GRIP", brand: "ICS"}
+]
+
+export default inventory

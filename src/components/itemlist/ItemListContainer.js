@@ -2,15 +2,15 @@
 import './ItemListContainer.css';
 import ItemCount from '../counter/ItemCount';
 import React from 'react'; 
+import ItemList from './ItemList';
+
 const ItemListContainer = (props) => {
     let stocki1 = 3
     let stocki2 = 7
     let stocki3 = 4
     let stocki4 = 0
     let stocki5 = 3
-    const check = () => {
-        console.log(stocki1)
-    }
+    
     return(
         <div className='all'>
             <div className='titles'>
@@ -21,7 +21,10 @@ const ItemListContainer = (props) => {
             <div className='list'>
                 <ul >
                     <li>{props.cat1}</li>
+
                     <ItemCount stock={stocki1}></ItemCount>
+                    <ItemList argu="Marcadoras primarias"></ItemList>
+                    
                     <li>{props.cat2}</li>
                     <ItemCount stock={stocki2}></ItemCount>
                     <li>{props.cat3}</li>
