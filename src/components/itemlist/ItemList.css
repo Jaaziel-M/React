@@ -21,3 +21,9 @@
 .h2{
     color:darkblue;
 }
+.item{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    flex-wrap: wrap;
+}

@@ -2,9 +2,7 @@
     background-color: blanchedalmond;
     height: 220px;
     width: 205px;
-    display: inline-block;  
-    align-items: center;
-    justify-content: center;
+    margin: 50px;
 }
 .Img{
     width: 200px;
@@ -19,6 +17,6 @@
 
 .buttons{
     display: flex;  
-    flex-direction: row; 
+    flex-direction: block; 
     justify-content: center;
 }

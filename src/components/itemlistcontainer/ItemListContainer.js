@@ -7,12 +7,12 @@ import {useState, useEffect} from "react";
 import inventory from './mocked_data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemList from '../itemlist/ItemList';
-import ItemCount from '../counter/ItemCount';
 
 const ItemListContainer = () => {
     
     let [newarr, setNewarr] = useState([]);  
     let callprom = new Promise((resolve,reject)=>{
+        
         setTimeout((resolve(inventory)),2000)
         setTimeout((reject("failure")),3000)
     })
@@ -23,6 +23,7 @@ const ItemListContainer = () => {
     return(
         <div className='container'>  
             <ItemList arry={newarr}></ItemList>
+            
         </div>
         
     )

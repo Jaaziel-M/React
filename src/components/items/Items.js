@@ -5,24 +5,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from '../counter/ItemCount';
 
 const Itemstyle = (props) => {
-
-
     return(
         <div className='ItemContainer'>
-            <p className='txt'>{props.brand}" - "{props.description}</p>
+            <p className='txt'>{props.brand} - {props.description}</p>
             <img className='Img' src={props.url}></img>
             <ul>
                 <li className='txt'>US$ {props.price}</li>
             </ul>
             <div className='buttons'>
                 <ItemCount stock={props.quantity}></ItemCount>
+            </div>
+            <div className='buttons'>
                 <button type="button" className="btn btn-outline-info btn-sm">Comprar</button>
                 <button type="button" className="btn btn-outline-warning btn-sm">Detalles</button>
             </div>
         </div>
     )
 }
-
-
 
 export default Itemstyle 

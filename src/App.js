@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/header/Navbar';
 import CartWidget from './components/cart/CartWidget';
 import ItemListContainer from './components/itemlistcontainer/ItemListContainer';
-import ItemCount from './components/counter/ItemCount';
 
 
 
@@ -20,7 +19,6 @@ class App extends React.Component{
       </>
     )
   }
-  
 }
 
 

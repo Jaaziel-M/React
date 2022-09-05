@@ -1,6 +1,6 @@
 import React from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWidget from '../cart/CartWidget';
+import './ItemCount.css'
 const ItemCount = (props) => {
 
     const [stockquantity, setStockquantity] = React.useState(props.stock);
@@ -22,9 +22,9 @@ const ItemCount = (props) => {
     return(
         <div>
             <button className='btn btn-success' onClick={up}>+</button>
-            <a>{buyquantity}</a>
+            <a  className='fuente'>{buyquantity}</a>
             <button className='btn btn-danger' onClick={down}>-</button>
-            <a> Stock: {stockquantity}</a>
+            <a className='fuente'> Stock: {stockquantity}</a>
         </div>
     )
 }

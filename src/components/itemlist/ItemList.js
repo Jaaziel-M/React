@@ -1,8 +1,5 @@
-// a item list le voy a dar como parametro la categoría a buscar 
-// recibe como parametro el arryay 
+
 import Itemstyle from "../items/Items";
-import ItemCount from "../counter/ItemCount";
-import ItemListContainer from "../itemlistcontainer/ItemListContainer";
 import "./ItemList.css"
 const ItemList = (props) => {
 
@@ -10,67 +7,98 @@ const ItemList = (props) => {
         <div className='all'>
             <div className='titles'>
                 <h1>Categorías</h1>
-                <h2>Listado de artículos de Airsoft</h2>
+                <h2>Listado de artícdivos de Airsoft</h2>
             </div>
-            
-            <div className='list'>
-                <a className='titles'>Marcadoras primarias</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("Marcadoras primarias" == item.product){
-                            //return(<p>{item.brand}</p>)
-                            {console.log(item)}
-                            <Itemstyle 
-                            brand={item.brand}
-                            url={item.pirctureUrl}
-                            price={item.price}
-                            quantity={item.quantity}
-                            ></Itemstyle>
-                        }
-                    })}
-                </ul>
-                <a className='titles'>Marcadoras secundarias</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("Marcadoras primarias" == item.product){
-                            //return(<p>{item.brand}</p>)
-                        }
-                    })}
-                </ul>
-                <a className='titles'>Indumentaria</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("indumentaria" == item.product){
-                            //return(<p>{item.brand}</p>)
-                        }
-                    })}
-                </ul>
-                <a className='titles'>Protección</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("Protección" == item.product){
-                            //return(<p>{item.brand}</p>)
-                        }
-                    })}
-                </ul>
-                <a className='titles'>Accesorios para marcadoras</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("Accesorios para marcadoras" == item.product){
-                            //return(<p>{item.brand}</p>)
-                        }
-                    })}
-                </ul>
-                <a className='titles'>Internos para marcadoras</a>
-                <ul>
-                    {props.arry.map((item)=>{
-                        if("Internos para marcadoras" == item.product){
-                            //return(<p>{item.brand}</p>)
-                        }
-                    })}
-                </ul>
-            </div>
-            
+                <div className='list'>
+                    <div className='titles'>Marcadoras primarias</div>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("Marcadoras primarias" == item.product){
+                                
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                            })}
+                    </div>
+                    <div className='titles'>Marcadoras secundarias</div>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("Marcadoras secundarias" == item.product){
+                                
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                        })}
+                    </div>
+                    <a className='titles'>Indumentaria</a>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("indumentaria" == item.product){
+                                
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                        })}
+                    </div>
+                    <a className='titles'>Protección</a>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("Protección" == item.product){
+                                
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                        })}
+                    </div>
+                    <a className='titles'>Accesorios para marcadoras</a>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("Accesorios para marcadoras" == item.product){
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                        })}
+                    </div>
+                    <a className='titles'>Internos para marcadoras</a>
+                    <div className="item">
+                        {props.arry.map((item)=>{
+                            if("Internos para marcadoras" == item.product){
+                                    return <Itemstyle 
+                                        brand={item.brand}
+                                        description={item.description}
+                                        url={item.pirctureUrl}
+                                        price={item.price}
+                                        quantity={item.quantity}
+                                    ></Itemstyle>
+                            }
+                        })}
+                    </div>
+            </div>  
         </div>
         
     )
