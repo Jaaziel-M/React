@@ -23,7 +23,6 @@ const ItemListContainer = () => {
     return(
         <div className='container'>  
             <ItemList arry={newarr}></ItemList>
-            
         </div>
         
     )

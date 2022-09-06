@@ -1,6 +1,7 @@
 
 import Itemstyle from "../items/Items";
 import "./ItemList.css"
+import React from "react";
 const ItemList = (props) => {
 
     return(
@@ -30,13 +31,15 @@ const ItemList = (props) => {
                         {props.arry.map((item)=>{
                             if("Marcadoras secundarias" == item.product){
                                 
-                                    return <Itemstyle 
+                                return <Itemstyle 
                                         brand={item.brand}
                                         description={item.description}
                                         url={item.pirctureUrl}
                                         price={item.price}
                                         quantity={item.quantity}
-                                    ></Itemstyle>
+                                        info={item.info}
+                                        ></Itemstyle>
+                                        
                             }
                         })}
                     </div>

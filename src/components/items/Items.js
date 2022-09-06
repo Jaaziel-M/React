@@ -3,8 +3,12 @@ import React from 'react';
 import './items.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from '../counter/ItemCount';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 
 const Itemstyle = (props) => {
+
+
     return(
         <div className='ItemContainer'>
             <p className='txt'>{props.brand} - {props.description}</p>
@@ -17,7 +21,7 @@ const Itemstyle = (props) => {
             </div>
             <div className='buttons'>
                 <button type="button" className="btn btn-outline-info btn-sm">Comprar</button>
-                <button type="button" className="btn btn-outline-warning btn-sm">Detalles</button>
+                <ItemDetailContainer articles={props.description} ></ItemDetailContainer>
             </div>
         </div>
     )
