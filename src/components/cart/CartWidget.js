@@ -9,7 +9,7 @@ const CartWidget = (props) => {
         
         <div className='marco'>
             <img src={ShoppingCart} className="shopping"></img>
-            <h1 className='text'>Shopcart: {props.items}</h1>
+            <h1 className='text'>{props.items}</h1>
         </div>
     );
 }

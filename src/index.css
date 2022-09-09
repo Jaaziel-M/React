@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://airsoft-forums.uk/uploads/monthly_2020_11/BFD19C09-CA18-4208-B74C-7153621CC82C.jpeg.a0043641772b8c99620e4c7dd955f446.jpeg');
+  background-position:initial;
 }
 
 code {

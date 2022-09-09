@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from '../counter/ItemCount';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
+import { Link } from 'react-router-dom'
 
 const Itemstyle = (props) => {
 
@@ -21,7 +22,10 @@ const Itemstyle = (props) => {
             </div>
             <div className='buttons'>
                 <button type="button" className="btn btn-outline-info btn-sm">Comprar</button>
-                <ItemDetailContainer articles={props.description} ></ItemDetailContainer>
+                <Link to={`item/${props.description}`}>
+                    <ItemDetailContainer articles={props.description} ></ItemDetailContainer>
+                </Link>
+                
             </div>
         </div>
     )
